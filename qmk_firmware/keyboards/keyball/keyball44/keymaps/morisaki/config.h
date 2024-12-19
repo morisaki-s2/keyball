@@ -36,7 +36,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAP_CODE_DELAY 5
 
 // キー長押し時間
-#define TAPPING_TERM 250
+#define TAPPING_TERM 180
 
 // レイヤー数
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5
