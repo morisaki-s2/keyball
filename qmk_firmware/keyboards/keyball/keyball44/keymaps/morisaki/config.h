@@ -43,3 +43,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // レイヤー数
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5
+
+// 自動レイヤー
+#define POINTING_DEVICE_AUTO_MOUSE_ENABLE
+
+// 自動レイヤーの番号
+#define AUTO_MOUSE_DEFAULT_LAYER 2
