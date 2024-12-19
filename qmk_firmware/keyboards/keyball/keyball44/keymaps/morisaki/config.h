@@ -46,3 +46,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // 自動レイヤーの番号
 #define AUTO_MOUSE_DEFAULT_LAYER 2
+
+ // マウスが止まってから元のレイヤーに戻るまでの時間(ms)
+#define AUTO_MOUSE_TIME 350
+
