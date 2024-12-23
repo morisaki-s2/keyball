@@ -36,7 +36,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAP_CODE_DELAY 5
 
 // キー長押し時間
-#define TAPPING_TERM 180
+// #define TAPPING_TERM 180
 
 // レイヤー数
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5
@@ -48,7 +48,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define AUTO_MOUSE_DEFAULT_LAYER 2
 
 // マウスが止まってから元のレイヤーに戻るまでの時間(ms)
-#define AUTO_MOUSE_TIME 350
+#define AUTO_MOUSE_TIME 500
 
 // マウスレイヤーをキープする時間
 #define AUTO_MOUSE_LAYER_KEEP_TIME 30000
