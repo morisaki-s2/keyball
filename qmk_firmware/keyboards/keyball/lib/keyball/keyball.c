@@ -709,14 +709,6 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
         keycode &= 0xff;
     }
 
-    #ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
-        // reduce auto mouse timeout if mouse key is pressed.
-        if ((is_mouse_record_kb(keycode, record) || IS_MOUSEKEY(keycode)) && record->event.pressed) {
-            set_auto_mouse_timeout(keyball_get_auto_mouse_timeout());
-            keyball.total_mouse_movement = 0;
-        }
-    #endif
-
     switch (keycode) {
 #ifndef MOUSEKEY_ENABLE
         // process KC_MS_BTN1~8 by myself
@@ -735,6 +727,14 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
             // processes.
             return true;
     }
+
+    #ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
+        // reduce auto mouse timeout if mouse key is pressed.
+        if ((is_mouse_record_kb(keycode, record) || IS_MOUSEKEY(keycode)) && record->event.pressed) {
+            set_auto_mouse_timeout(keyball_get_auto_mouse_timeout());
+            keyball.total_mouse_movement = 0;
+        }
+    #endif
 
     // process events which works on pressed only.
     if (record->event.pressed) {
